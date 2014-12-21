@@ -28,7 +28,7 @@ Erros de parse serão exibidos com a mensagem: '/!\\erro de formato/!\'
 Reconhecimento dos dígitos
 ------
 
-Por meio da [seguinte função de Hash](https://github.com/felipegtx/Kanui/blob/master/Kanui/Parsers/DataParserResult.cs#L186), é possível extrair um identificador único para cada grupo de caracteres que representam um dado dígito no display:
+Por meio da [seguinte função de Hash](https://github.com/felipegtx/Kanui/blob/master/Projeto/Kanui/Parsers/DataParserResult.cs#L186), é possível extrair um identificador único para cada grupo de caracteres que representam um dado dígito no display:
 
 `acumulator += (((y ^ d) + (xRef ^ d)) / 3) + (d * y);`
 
