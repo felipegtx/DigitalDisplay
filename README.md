@@ -6,9 +6,9 @@ Solução para o problema '[digital display](https://github.com/Kanui/QueroSerKa
 Reconhecimento dos dígitos
 ------
 
-Por meio da seguinte função de Hash, é possível extrair um identificador único para cada grupo de caracteres que representam um dado dígito no display:
+Por meio da [seguinte função de Hash](https://github.com/felipegtx/Kanui/blob/master/Kanui/Parsers/DataParserResult.cs#L186), é possível extrair um identificador único para cada grupo de caracteres que representam um dado dígito no display:
 
-![(((y ^ d) + (x ^ d)) / 3) + (d * y)](http://www4a.wolframalpha.com/Calculate/MSP/MSP60741aid4gd37d296bef000010930b6675fb6530?MSPStoreType=image/gif&s=25&w=108.&h=36. "(((y ^ d) + (x ^ d)) / 3) + (d * y)")
+`acumulator += (((y ^ d) + (xRef ^ d)) / 3) + (d * y);`
 
 Onde *d* é o resultado da função **GetHashCode** do char em cada uma das posições do display.
 
