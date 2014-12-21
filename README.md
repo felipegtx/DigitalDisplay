@@ -17,8 +17,6 @@ Tecnologia utilizada
 
 * .Net Framework 4.5 (C#)
 * .MSTests
-* 
-
 
 
 
