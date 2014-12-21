@@ -14,14 +14,14 @@ O programa interpretará o parâmetro como sendo um arquivo de texto que será u
 
 *IMPORTANTE:* Colisões e erros de cálculo serão identificados no output como '/!\\erro de formato/!\' e NÃO atualizarão o arquivo de indexação.
 
-*EXEMPLO:* Kanui.exe t>C:\\MeuArquivo.txt
+*EXEMPLO:* Kanui.exe "t>C:\\MeuArquivo.txt"
 
 **Identificação**
 Com base no arquivo de indices, o programa tentará identificar os caracteres existentes no arquivo seguindo o conhecimento obtido em treinamentos prévios. 
 
 Erros de parse serão exibidos com a mensagem: '/!\\erro de formato/!\'
 
-*EXEMPLO:* Kanui.exe i>C:\\MeuArquivo.txt
+*EXEMPLO:* Kanui.exe "i>C:\\MeuArquivo.txt"
 
 Reconhecimento dos dígitos
 ------
