@@ -5,7 +5,7 @@ Solução para o problema '[digital display](https://github.com/Kanui/QueroSerKa
 
 Versão compilada
 ------
-Disponível em formato 7z [*aqui*](https://github.com/felipegtx/Kanui/raw/master/Release.7z).
+Disponível em formato [7zip](http://www.7-zip.org/) [*aqui*](https://github.com/felipegtx/Kanui/raw/master/Release.7z).
 
 Utilizando a solução
 ------
