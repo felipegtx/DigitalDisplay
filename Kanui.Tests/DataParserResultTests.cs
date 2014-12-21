@@ -20,6 +20,7 @@ namespace Kanui.Tests
             Dictionary<int, int> serializedHash = null;
 
             /// WE first setup the fakes we'll need
+            InstanceResolverFor<ILogOutput>.InstanceBuilder = () => new FakeLogOutput();
             InstanceResolverFor<IFSController>.InstanceBuilder = () => new FakeFSController
             {
                 FakeExists = _ => true,

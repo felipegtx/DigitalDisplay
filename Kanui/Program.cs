@@ -3,6 +3,7 @@ using Kanui.IO;
 using Kanui.IO.Abstractions;
 using Kanui.Parsers;
 using System;
+using System.Linq;
 
 namespace Kanui
 {
@@ -12,42 +13,48 @@ namespace Kanui
 
         static void Main(string[] args)
         {
-            /// We first setup our dependecies...
-            var serializer = new Serializer();
-            var fsController = new FSController();
-            InstanceResolverFor<ISerializer>.InstanceBuilder = () => serializer;
-            InstanceResolverFor<IFSController>.InstanceBuilder = () => fsController;
+            try
+            {
+                /// We first setup our dependecies...
+                var serializer = new Serializer();
+                var fsController = new FSController();
+                var logOutput = new LogOutput();
+                InstanceResolverFor<ISerializer>.InstanceBuilder = () => serializer;
+                InstanceResolverFor<ILogOutput>.InstanceBuilder = () => logOutput;
+                InstanceResolverFor<IFSController>.InstanceBuilder = () => fsController;
 
 #if Debug
             //args = new string[] { @"t>C:\Users\Felipe\Desktop\treinamento.txt" };
-            args = new string[] { @"i>C:\Users\Felipe\Desktop\data.txt" };
+            //args = new string[] { @"i>C:\Users\Felipe\Desktop\data.txt" };
 #endif
 
-            if (args == null) { throw new Exception(string.Format("O programa não executou nenhum tarefa. Para ajuda, execute-o com o parâmetro '{0}'.", HELP_PARAMETER_NAME)); }
-
-            if (args.Length != 1)
-            {
-                throw new Exception(string.Format("Parâmetros de execução inválidos. Para ajuda, execute-o com o parâmetro '{0}'.", HELP_PARAMETER_NAME));
-            }
-            else
-            {
-
-                /// Then we can rock on!
-                switch (args[0])
+                if (args == null) { throw new Exception(string.Format("O programa não executou nenhum tarefa. Para ajuda, execute-o com o parâmetro '{0}'.", HELP_PARAMETER_NAME)); }
+                if (args.Length != 1)
                 {
-                    case HELP_PARAMETER_NAME:
-                        ShowHelpText();
-                        break;
-                    default:
-                        foreach (var result in DataParserResult.LoadUsing(CommandParser.Parse(args[0])).Result)
-                        {
-                            Console.WriteLine(result);
-                        }
-                        break;
+                    throw new Exception(string.Format("Parâmetros de execução inválidos. Para ajuda, execute-o com o parâmetro '{0}'.", HELP_PARAMETER_NAME));
                 }
+                else
+                {
+                    /// Then we can rock on!
+                    switch (args[0])
+                    {
+                        case HELP_PARAMETER_NAME:
+                            ShowHelpText();
+                            break;
+                        default:
+                            foreach (var result in DataParserResult.LoadUsing(CommandParser.Parse(args[0])).Result)
+                            {
+                                Console.WriteLine(result);
+                            }
+                            break;
+                    }
 
+                }
             }
+            catch (Exception e) { Console.WriteLine(e); }
 
+            Console.WriteLine();
+            Console.WriteLine("Fim!");
             Console.ReadLine();
         }
 

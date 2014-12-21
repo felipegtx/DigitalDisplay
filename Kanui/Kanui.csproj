@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="DI\InstanceResolver.cs" />
     <Compile Include="IO\Abstractions\IFSController.cs" />
+    <Compile Include="IO\Abstractions\ILogOutput.cs" />
     <Compile Include="IO\Abstractions\ISerializer.cs" />
     <Compile Include="IO\FSController.cs" />
+    <Compile Include="IO\LogOutput.cs" />
     <Compile Include="IO\Serializer.cs" />
     <Compile Include="Parsers\CommandParser.cs" />
     <Compile Include="Parsers\DataParserResult.cs" />

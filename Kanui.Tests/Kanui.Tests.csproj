@@ -54,6 +54,7 @@
     <Compile Include="CommandParserTests.cs" />
     <Compile Include="DataParserResultTests.cs" />
     <Compile Include="Fakes\FakeIOController.cs" />
+    <Compile Include="Fakes\FakeLogOutput.cs" />
     <Compile Include="Fakes\FakeSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

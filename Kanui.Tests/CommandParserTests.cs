@@ -15,6 +15,7 @@ namespace Kanui.Tests
         {
             /// WE first setup the fake for IO bound operation
             InstanceResolverFor<IFSController>.InstanceBuilder = () => new FakeFSController { FakeExists = _ => !string.IsNullOrEmpty(_) };
+            InstanceResolverFor<ILogOutput>.InstanceBuilder = () => new FakeLogOutput();
 
             /// Now based on the following scenarios [key=parameter, value=is it expected to be valid]
             var parameterDictionary = new Dictionary<string, bool> 
