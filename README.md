@@ -27,7 +27,7 @@ The compilation output is the file *Kanui.exe* that can be used in two different
 The program will treat the input parameter as the path to a text file that shall be used to calculate the identification hash for each of the ten digits we are concerned. As a result the program will update  the index file that comes with the solution (*map.kanui*) and this will be the active pattern for future recognition.
 
 ##### DISCLAIMER:
-Collisions are identified in the output as '/!\\erro de formato/!\' and keep the index file from being updated.
+Collisions are identified in the output as ```'/!\\erro de formato/!\'``` and keep the index file from being updated.
 
 ##### Example:
 ```bash
@@ -37,9 +37,9 @@ Kanui.exe "t>C:\\MyFile.txt"
 #### Identification mode
 Based on the active index file the program will try to identify the digits inside the provided feature file.
 
-Parser errors outputs as: '/!\\erro de formato/!\'
+Parser errors outputs as: ```'/!\\erro de formato/!\'```
 
-##### Sample:
+##### Example:
 ```bash
 Kanui.exe "i>C:\\Myfile.txt"
 ```
