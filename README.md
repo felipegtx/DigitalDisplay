@@ -16,10 +16,6 @@ acumulator += (((y ^ d) + (xRef ^ d)) / 3) + (d * y);
 
 Where *d* is the result from the call to **GetHashCode** - using the char on each of the 3x3 position in the training set matrix.
 
-Compiled version
------
-Available as [7zip](http://www.7-zip.org/) [*here*](https://github.com/felipegtx/Kanui/raw/master/Release.7z).
-
 Execution modes
 -----
 The compilation output is the file *Kanui.exe* that can be used in two different ways:
