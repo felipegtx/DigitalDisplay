@@ -16,6 +16,30 @@ acumulator += (((y ^ d) + (xRef ^ d)) / 3) + (d * y);
 
 Where *d* is the result from the call to **GetHashCode** - using the char on each of the 3x3 position in the training set matrix.
 
+Available training sets
+-----
+
+  . [Digital1](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital1)
+  ```
+   _     _  _     _  _  _  _  _ 
+  | |  | _| _||_||_ |_   ||_||_|
+  |_|  ||_  _|  | _||_|  ||_| _|
+  ```
+
+  . [Digital2](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital2)
+  ```
+   _     _  _     _  _  _  _  _ 
+  [ ]  | _] _]|_|[_ [_   |[_][_]
+  [_]  |[_  _]  | _][_]  |[_] _]
+  ```
+
+  . [Digital3](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital3)
+  ```
+   _     _  _     _  _  _  _  _ 
+  < >  | _> _><_|<_ <_   |<_><_>
+  [_]  |[_  _]  | _][_]  |[_] _]
+  ```
+
 Execution modes
 -----
 The compilation output is the file *DigitalDisplay.exe* that can be used in two different ways:
