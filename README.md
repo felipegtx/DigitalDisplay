@@ -19,26 +19,26 @@ Where *d* is the result from the call to **GetHashCode** - using the char on eac
 Available training sets
 -----
 
-  . [Digital1](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital1)
-  ```
-   _     _  _     _  _  _  _  _ 
-  | |  | _| _||_||_ |_   ||_||_|
-  |_|  ||_  _|  | _||_|  ||_| _|
-  ```
+  - [Digital1](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital1)
+```
+ _     _  _     _  _  _  _  _ 
+| |  | _| _||_||_ |_   ||_||_|
+|_|  ||_  _|  | _||_|  ||_| _|
+```
 
-  . [Digital2](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital2)
-  ```
-   _     _  _     _  _  _  _  _ 
-  [ ]  | _] _]|_|[_ [_   |[_][_]
-  [_]  |[_  _]  | _][_]  |[_] _]
-  ```
+  - [Digital2](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital2)
+```
+ _     _  _     _  _  _  _  _ 
+[ ]  | _] _]|_|[_ [_   |[_][_]
+[_]  |[_  _]  | _][_]  |[_] _]
+```
 
-  . [Digital3](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital3)
-  ```
-   _     _  _     _  _  _  _  _ 
-  < >  | _> _><_|<_ <_   |<_><_>
-  [_]  |[_  _]  | _][_]  |[_] _]
-  ```
+  - [Digital3](https://github.com/felipegtx/DigitalDisplay/tree/master/Training%20sets/Digital3)
+```
+ _     _  _     _  _  _  _  _ 
+< >  | _> _><_|<_ <_   |<_><_>
+[_]  |[_  _]  | _][_]  |[_] _]
+```
 
 Execution modes
 -----
